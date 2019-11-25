@@ -10,7 +10,6 @@ fn main() {
         .title("Daymap")
         .content(Content::Html(HTML))
         .size(800, 600)
-        .debug(true)
         .user_data(())
         .invoke_handler(|_webview, _arg| Ok(()))
         .run()

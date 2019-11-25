@@ -1,18 +1,23 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8"/>
+
         <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> 
         <link href="css/master.css" rel="stylesheet">
+        <link href="css/animations.css" rel="stylesheet">
+
+        <script src="js/master.js"></script>
+        <script src="js/animations.js"></script>
+        <script src="js/client.js"></script>
     </head>
     <body>
         <div class="centered"><div id="login-prompt">
-            <div>
-                <input class="login-input" type="text" placeholder="Username" required>
-            </div>
-            <div>
-                <input class="login-input" type="password" placeholder="Password" required>    
-            </div>
-            <input type="submit" id="enter-button" value="Login">
+            <input class="login-input" type="text" placeholder="Username">
+            <br>
+            <input class="login-input" type="password" placeholder="Password">    
+            <br>
+            <button id="enter-button" onclick="login()">Login</button>
         </div></div>
 
         <img src="img/title.png"/>

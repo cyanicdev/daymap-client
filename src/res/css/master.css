@@ -1,5 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
+    min-width: 500px;
     color: white;
     background-color: #0B0E1F;
 }
@@ -13,14 +14,15 @@ body {
 #login-prompt {
     border-radius: 10px;
     padding: 20px;
-    background-color: #1B1E2F;
+    background-color: #0f0e18;
     text-align: center;
     z-index: 10000;
+    box-shadow: 0px 0px 5px black;
 }
 
 .login-input {
     padding: 10px;
-    border: 1px solid black;
+    border: none;
     color: #ddd;
     background-color: #1a1a1a;
     border-radius: 5px;
@@ -53,5 +55,5 @@ body {
 #enter-button:hover {
     background-color: #333;
     color: white;
-    box-shadow: 0px 2px 5px #1e1e1e;
+    box-shadow: 0px 2px 5px #111;
 }
