@@ -1,0 +1,10 @@
+[package]
+name = "daymap-client"
+version = "0.1.0"
+authors = ["cyanicdev"]
+edition = "2019"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+web-view = { version = "*", features = ["edge"] }
