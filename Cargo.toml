@@ -8,3 +8,5 @@ edition = "2018"
 
 [dependencies]
 web-view = { version = "*", features = ["edge"] }
+os_info = "*"
+msgbox = "*"
