@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8"/>
+        <meta charset="UTF-8">
 
         <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> 
         <link href="css/master.css" rel="stylesheet">
@@ -13,11 +13,9 @@
     </head>
     <body>
         <div class="centered"><div id="login-prompt">
-            <input class="login-input" type="text" placeholder="Username">
-            <br>
-            <input class="login-input" type="password" placeholder="Password">    
-            <br>
-            <button id="enter-button" onclick="login()">Login</button>
+            <input class="login-input" type="text" id="username" placeholder="Username"/>
+            <input class="login-input" type="password" id="password" placeholder="Password"/>
+            <input class="login-input" type="button" id="login-button" value="Login" onclick="login()"/>
         </div></div>
 
         <img src="img/title.png"/>

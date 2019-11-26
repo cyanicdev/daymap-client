@@ -1,3 +1,5 @@
+//#![windows_subsystem = "windows"]
+
 extern crate web_view;
 extern crate os_info;
 extern crate msgbox;
@@ -31,12 +33,33 @@ fn main() {
         return msgbox::create("Error", "Unfortunately, your computer cannot run the Radio Glenunga app as it requires Windows 10 1809.\n\nPlease upgrade your version of Windows to use the app.", msgbox::IconType::Error);
     }
 
-    web_view::builder()
+    let webview = builder()
         .title("Daymap")
         .content(Content::Html(HTML))
         .size(800, 600)
         .user_data(())
-        .invoke_handler(|_webview, _arg| Ok(()))
-        .run()
+        .invoke_handler(|webview, arg| {
+            println!("{}", arg);
+            let mut args: &str = arg;
+            let mut return_code: String = String::new();
+
+            if arg.contains(" to ") {
+                let chunks: Vec<&str> = arg.split(" to ").collect();
+                args = chunks[0];
+                return_code += chunks[1];
+                return_code += " = ";
+            }
+
+            if args.contains("get_homepage") {
+                
+            }
+
+            webview.eval(return_code.as_str())
+        })
+        .build()
         .unwrap();
+    
+    let res = webview.run().unwrap();
+
+    println!("final state: {:?}", res);
 }
