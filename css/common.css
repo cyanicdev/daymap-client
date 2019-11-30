@@ -1,0 +1,37 @@
+* {
+    outline: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Poppins', sans-serif !important;
+    transition: all 200ms;
+    user-select: none;
+}
+
+body {
+    color: white;
+    background-color: #0B0E1F;
+}
+
+.blurred {
+    filter: blur(10px);
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.centered {
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.centered > * {
+    margin: auto;
+}
+
+button {
+    border-radius: 10px;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "daymap-client",
+  "version": "0.1.0",
+  "description": "A desktop client for Daymap built on Electron, unfortunately.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cyanicdev/daymap-client.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cyanicdev/daymap-client/issues"
+  },
+  "homepage": "https://github.com/cyanicdev/daymap-client#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^7.1.2"
+  }
+}

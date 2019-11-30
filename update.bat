@@ -1,1 +1,0 @@
-inline-assets src\res\main.html src\resources.rc

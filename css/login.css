@@ -1,0 +1,129 @@
+#logo-img {
+    position: absolute;
+    width: 101.79px;
+    height: 101.79px;
+    left: calc(50% - 101.79px/2 - 428.6px);
+    top: calc(50% - 101.79px/2 - 196.1px);
+}
+
+#logo-text {
+    position: absolute;
+    width: 263px;
+    height: 96px;
+    left: calc(50% - 263px/2 - 208px);
+    top: calc(50% - 96px/2 - 196px);
+    font-size: 64px;
+    line-height: 96px;
+    letter-spacing: -0.045em;
+    font-family: 'Poppins', sans-serif;
+
+    background: linear-gradient(90deg, #D058D3 0%, #8636CB 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#welcome-text {
+    position: absolute;
+    width: 427px;
+    height: 90px;
+    left: calc(50% - 427px/2 - 265px);
+    top: calc(50% - 90px/2 - 71px);
+
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+
+    color: #F5D6FF;
+}
+
+#login-header {
+    position: absolute;
+    width: 319px;
+    height: 56px;
+    left: calc(50% - 334px/2 + 290.5px);
+    top: calc(50% - 56px/2 - 181px);
+
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+
+    color: #F5D6FF;
+}
+
+#login-username {
+    position: absolute;
+    width: 320px;
+    height: 32px;
+    left: calc(50% - 334px/2 + 290.5px);
+    top: calc(50% - 32px/2 - 91px);
+
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #F5D6FF;
+    background: transparent;
+    border-bottom: 2px solid #F5D6FF;
+}
+
+#login-password {
+    position: absolute;
+    width: 320px;
+    height: 32px;
+    left: calc(50% - 334px/2 + 290.5px);
+    top: calc(50% - 32px/2 + 35px);
+
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #F5D6FF;
+    background: transparent;
+    border-bottom: 2px solid #F5D6FF;
+}
+
+#login-username-caption {
+    position: absolute;
+    width: 320px;
+    height: 73px;
+    left: calc(50% - 319px/2 + 282px);
+    top: calc(50% - 73px/2 - 25.5px);
+
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #F5D6FF;
+}
+
+#login-password-caption {
+    position: absolute;
+    width: 320px;
+    height: 73px;
+    left: calc(50% - 319px/2 + 283px);
+    top: calc(50% - 73px/2 + 97.5px);
+
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #F5D6FF;
+}
+
+#login-submit {
+    position: absolute;
+    width: 320px;
+    height: 56px;
+    left: calc(50% - 336px/2 + 290.5px);
+    top: calc(50% - 56px/2 + 182px);
+
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+
+    color: #F5D6FF;
+    background: transparent;
+}
+
+#login-submit:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
