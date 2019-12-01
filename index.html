@@ -13,19 +13,23 @@
         <script src="js/client.js"></script>
     </head>
     <body>
-        <div id="login-screen">
+        <div id="login-screen" class="screen">
             <img id="logo-img" src="img/logo.svg">
             <p id="logo-text">Daymap</p>
             <p id="welcome-text">Welcome to the unofficial Daymap client, where you can check up on your latest assignments, class changes and Line 0s.</p>
 
             <p id="login-header">Welcome</p>
+
             <input type="text" id="login-username" placeholder="john.doe">
             <input type="password" id="login-password" placeholder="••••••••••">
-
+    
             <p id="login-username-caption">Username</p>
-            <p id="login-password-caption">Password</p>
+            <p id="login-password-caption">Password</p>            
 
-            <button id="login-submit" onclick="">Connect to Daymap</button>
+            <button id="login-submit" onclick="login()">Connect to Daymap</button>
         </div>        
+
+        <div id="main-screen" class="screen inactive-screen">
+        </div>
     </body>
 </html>

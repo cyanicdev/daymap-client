@@ -35,3 +35,8 @@ body {
 button {
     border-radius: 10px;
 }
+
+.inactive-screen {
+    opacity: 0;
+    pointer-events: none;
+}

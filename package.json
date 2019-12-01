@@ -18,6 +18,7 @@
   "homepage": "https://github.com/cyanicdev/daymap-client#readme",
   "dependencies": {},
   "devDependencies": {
-    "electron": "^7.1.2"
+    "electron": "^7.1.2",
+    "node-http-ntlm": "^1.7.5"
   }
 }
