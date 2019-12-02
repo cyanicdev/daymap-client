@@ -2,20 +2,24 @@
     position: absolute;
     width: 101.79px;
     height: 101.79px;
-    left: calc(50% - 101.79px/2 - 428.6px);
-    top: calc(50% - 101.79px/2 - 196.1px);
+    left: calc(50% - 101.79px/2 - 462.6px);
+    top: calc(50% - 101.79px/2 - 224.7px);
 }
 
 #logo-text {
     position: absolute;
     width: 263px;
     height: 96px;
-    left: calc(50% - 263px/2 - 208px);
-    top: calc(50% - 96px/2 - 196px);
+    left: calc(50% - 263px/2 - 242px);
+    top: calc(50% - 96px/2 - 224.6px);
+
     font-size: 64px;
     line-height: 96px;
+
+    /* identical to box height */
+    display: flex;
+    align-items: center;
     letter-spacing: -0.045em;
-    font-family: 'Poppins', sans-serif;
 
     background: linear-gradient(90deg, #D058D3 0%, #8636CB 100%);
     -webkit-background-clip: text;
@@ -26,8 +30,8 @@
     position: absolute;
     width: 427px;
     height: 90px;
-    left: calc(50% - 427px/2 - 265px);
-    top: calc(50% - 90px/2 - 71px);
+    left: calc(50% - 427px/2 - 300px);
+    top: calc(50% - 90px/2 - 82.6px);
 
     font-weight: 300;
     font-size: 20px;
@@ -126,4 +130,28 @@
 
 #login-submit:hover {
     background-color: rgba(0, 0, 0, 0.3);
+}
+
+#login-rectangle1 {
+    position: absolute;
+    width: 274.74px;
+    height: 534px;
+    left: -100px;
+    top: -200px;
+
+    background: linear-gradient(179.94deg, rgba(134, 54, 203, 0) 0.03%, rgba(134, 54, 203, 0.5) 95.39%);
+    border-radius: 40px;
+    transform: rotate(148.12deg);
+}
+
+#login-rectangle2 {
+    position: absolute;
+    width: 275.21px;
+    height: 534px;
+    left: 223px;
+    top: -200px;
+
+    background: linear-gradient(179.94deg, rgba(134, 54, 203, 0) 0.03%, rgba(134, 54, 203, 0.5) 95.39%);
+    border-radius: 40px;
+    transform: rotate(148.12deg);
 }

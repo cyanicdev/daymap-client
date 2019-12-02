@@ -4,7 +4,7 @@ const fs = require('fs');
 let win;
 
 function createWindow() {
-    win = new BrowserWindow({ width: 1200, height: 800, minWidth: 1024, minHeight: 600, webPreferences: { nodeIntegration: true }, backgroundColor: '#FFF' });
+    win = new BrowserWindow({ width: 1200, height: 800, minWidth: 1200, minHeight: 800, webPreferences: { nodeIntegration: true }, backgroundColor: '#FFF' });
     Menu.setApplicationMenu(Menu.buildFromTemplate(template))
     win.loadFile('index.html');
     win.on('closed', () => {
