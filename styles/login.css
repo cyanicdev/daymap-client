@@ -45,13 +45,14 @@
 
 #login-header {
     position: absolute;
-    width: 319px;
+    width: 334px;
     height: 56px;
     left: calc(50% - 334px/2 + 290.5px);
-    top: calc(50% - 56px/2 - 181px);
+    top: calc(50% - 56px/2 - 189.6px);
 
-    font-size: 36px;
-    line-height: 54px;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 51px;
     text-align: center;
 
     color: #F5D6FF;
@@ -59,10 +60,10 @@
 
 #login-username {
     position: absolute;
-    width: 320px;
+    width: 334px;
     height: 32px;
-    left: calc(50% - 334px/2 + 290.5px);
-    top: calc(50% - 32px/2 - 91px);
+    left: calc(50% - 334px/2 + 289.5px);
+    top: calc(50% - 32px/2 - 82.6px);
 
     font-size: 20px;
     line-height: 30px;
@@ -74,10 +75,10 @@
 
 #login-password {
     position: absolute;
-    width: 320px;
+    width: 334px;
     height: 32px;
-    left: calc(50% - 334px/2 + 290.5px);
-    top: calc(50% - 32px/2 + 35px);
+    left: calc(50% - 334px/2 + 289.5px);
+    top: calc(50% - 32px/2 + 22.4px);
 
     font-size: 20px;
     line-height: 30px;
@@ -87,54 +88,74 @@
     border-bottom: 2px solid #F5D6FF;
 }
 
+#login-remember {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    left: calc(50% - 17px/2 + 131px);
+    top: calc(50% - 19px/2 + 102.9px);
+}
+
+#login-remember-text {
+    position: absolute;
+    width: 319px;
+    height: 31px;
+    left: calc(50% - 319px/2 + 310px);
+    top: calc(50% - 31px/2 + 105.9px);
+
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #F5D6FF;
+}
+
 #login-username-caption {
     position: absolute;
-    width: 320px;
-    height: 73px;
-    left: calc(50% - 319px/2 + 282px);
-    top: calc(50% - 73px/2 - 25.5px);
+    width: 319px;
+    left: calc(50% - 319px/2 + 281px);
+    top: calc(50% - 73px/2 - 16.1px);
 
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 16px;
+    line-height: 24px;
 
     color: #F5D6FF;
 }
 
 #login-password-caption {
     position: absolute;
-    width: 320px;
-    height: 73px;
-    left: calc(50% - 319px/2 + 283px);
-    top: calc(50% - 73px/2 + 97.5px);
+    width: 319px;
+    left: calc(50% - 319px/2 + 282px);
+    top: calc(50% - 73px/2 + 84.9px);
 
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 16px;
+    line-height: 24px;
 
     color: #F5D6FF;
 }
 
 #login-submit {
     position: absolute;
-    width: 320px;
+    width: 335px;
     height: 56px;
-    left: calc(50% - 336px/2 + 290.5px);
-    top: calc(50% - 56px/2 + 182px);
+    left: calc(50% - 335px/2 + 289px);
+    top: calc(50% - 56px/2 + 191.4px);
 
     font-size: 22px;
     line-height: 33px;
     text-align: center;
 
-    color: #F5D6FF;
-    background: transparent;
+    color: #0B0E1F;
+    background: #F5D6FF;
+    border-radius: 30px;
 }
 
 #login-submit:hover {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: #7A6B7F;
 }
 
 #login-rectangle1 {
     position: absolute;
-    width: 274.74px;
+    width: 275px;
     height: 534px;
     left: -100px;
     top: -200px;
@@ -146,9 +167,9 @@
 
 #login-rectangle2 {
     position: absolute;
-    width: 275.21px;
+    width: 275px;
     height: 534px;
-    left: 223px;
+    left: 224px;
     top: -200px;
 
     background: linear-gradient(179.94deg, rgba(134, 54, 203, 0) 0.03%, rgba(134, 54, 203, 0.5) 95.39%);

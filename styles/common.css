@@ -100,3 +100,20 @@ button {
     opacity: 0;
     pointer-events: none;
 }
+
+.spinner {
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    border: 10px solid #0B0E1F;
+    border-top: 10px solid #F5D6FF;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

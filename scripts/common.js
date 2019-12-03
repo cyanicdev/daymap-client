@@ -14,6 +14,6 @@ function changeScreen(newScreen) {
     gebi(newScreen).classList.remove("inactive-screen");
 }
 
-window.onload = function() {
-    document.body.classList.add("loaded");
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
 }

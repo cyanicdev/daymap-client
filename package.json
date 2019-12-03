@@ -19,6 +19,7 @@
   "dependencies": {},
   "devDependencies": {
     "electron": "^7.1.2",
+    "electron-store": "^5.1.0",
     "node-http-ntlm": "^1.7.5"
   }
 }
