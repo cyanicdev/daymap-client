@@ -7,8 +7,13 @@ const store = new Store();
 let win;
 
 function createWindow() {
-    win = new BrowserWindow({ width: 1200, height: 800, minWidth: 1200, minHeight: 800, webPreferences: { nodeIntegration: true }, backgroundColor: '#FFF' });
+    if (process.platform == 'darwin') {
+        win = new BrowserWindow({ width: 1200, height: 800, minWidth: 1200, minHeight: 800, webPreferences: { nodeIntegration: true }, backgroundColor: '#FFF', titleBarStyle: 'hidden' });
+    } else {
+        win = new BrowserWindow({ width: 1200, height: 800, minWidth: 1200, minHeight: 800, webPreferences: { nodeIntegration: true }, backgroundColor: '#FFF', frame: false });
+    }
     Menu.setApplicationMenu(null);
+    win.webContents.openDevTools({ mode: "detach" })
     win.loadFile('index.html');
     win.on('closed', () => {
         win = null;
