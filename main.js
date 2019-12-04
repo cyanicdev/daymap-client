@@ -10,10 +10,10 @@ function createWindow() {
 
     if (process.platform == 'win32') {
         // Windows
-        win = new BrowserWindow({ width: 1024, height: 640, minWidth: 1024, minHeight: 640, webPreferences: { nodeIntegration: true }, backgroundColor: '#FFF', frame: false });
+        win = new BrowserWindow({ width: 1024, height: 640, minWidth: 1024, minHeight: 640, webPreferences: { nodeIntegration: true }, backgroundColor: '#0B0E1F', frame: false });
     } else {
         // Mac and Linux
-        win = new BrowserWindow({ width: 1024, height: 640, minWidth: 1024, minHeight: 640, webPreferences: { nodeIntegration: true }, backgroundColor: '#FFF', titleBarStyle: 'hidden' });
+        win = new BrowserWindow({ width: 1024, height: 640, minWidth: 1024, minHeight: 640, webPreferences: { nodeIntegration: true }, backgroundColor: '#0B0E1F', titleBarStyle: 'hidden' });
     }
 
     Menu.setApplicationMenu(null);
