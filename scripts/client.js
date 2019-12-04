@@ -58,4 +58,10 @@ window.onload = function() {
     } else {
         document.body.classList.add("loaded");
     }
+
+    document.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+            login();
+        }
+    });
 }

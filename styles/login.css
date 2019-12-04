@@ -1,19 +1,20 @@
+
 #logo-img {
     position: absolute;
-    width: 101.79px;
-    height: 101.79px;
-    left: calc(50% - 101.79px/2 - 400.1px);
-    top: calc(50% - 101.79px/2 - 218.1px);
+    width: 80px;
+    height: 80px;
+    left: calc(50% - 80px/2 - 400.1px);
+    top: calc(50% - 80px/2 - 218.1px);
 }
 
 #logo-text {
     position: absolute;
-    width: 263px;
+    width: 280px;
     height: 96px;
-    left: calc(50% - 263px/2 - 179.5px);
+    left: calc(50% - 280px/2 - 182px);
     top: calc(50% - 96px/2 - 218px);
 
-    font-size: 64px;
+    font-size: 52px;
     line-height: 96px;
 
     /* identical to box height */
@@ -34,7 +35,7 @@
     top: calc(50% - 90px/2 - 76px);
 
     font-weight: 300;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 30px;
     display: flex;
     align-items: center;
@@ -51,7 +52,7 @@
     top: calc(50% - 56px/2 - 190px);
 
     font-weight: 600;
-    font-size: 34px;
+    font-size: 28px;
     line-height: 51px;
     text-align: center;
 
@@ -61,11 +62,11 @@
 #login-username {
     position: absolute;
     width: 334px;
-    height: 32px;
+    height: 42px;
     left: calc(50% - 334px/2 + 274px);
-    top: calc(50% - 32px/2 - 83px);
+    top: calc(50% - 32px/2 - 100px);
 
-    font-size: 20px;
+    font-size: 16px;
     line-height: 30px;
 
     color: #F5D6FF;
@@ -76,11 +77,11 @@
 #login-password {
     position: absolute;
     width: 334px;
-    height: 32px;
+    height: 42px;
     left: calc(50% - 334px/2 + 274px);
-    top: calc(50% - 32px/2 + 22px);
+    top: calc(50% - 38px/2 + 5px);
 
-    font-size: 20px;
+    font-size: 16px;
     line-height: 30px;
 
     color: #F5D6FF;
@@ -100,10 +101,10 @@
     position: absolute;
     width: 319px;
     height: 31px;
-    left: calc(50% - 319px/2 + 294.5px);
+    left: calc(50% - 319px/2 + 267px);
     top: calc(50% - 31px/2 + 105.5px);
 
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
 
     color: #F5D6FF;
@@ -113,9 +114,9 @@
     position: absolute;
     width: 319px;
     left: calc(50% - 319px/2 + 265.5px);
-    top: calc(50% - 22px/2 - 42px);
+    top: calc(50% - 22px/2 - 59px);
 
-    font-size: 16px;
+    font-size: 12px;
     line-height: 24px;
 
     color: #F5D6FF;
@@ -125,9 +126,9 @@
     position: absolute;
     width: 319px;
     left: calc(50% - 319px/2 + 266.5px);
-    top: calc(50% - 23px/2 + 59.5px);
+    top: calc(50% - 23px/2 + 42.5px);
 
-    font-size: 16px;
+    font-size: 12px;
     line-height: 24px;
 
     color: #F5D6FF;
@@ -140,7 +141,7 @@
     left: calc(50% - 335px/2 + 273.5px);
     top: calc(50% - 56px/2 + 191px);
 
-    font-size: 22px;
+    font-size: 16px;
     line-height: 33px;
     text-align: center;
 
@@ -177,3 +178,16 @@
     border-radius: 40px;
     transform: rotate(148.12deg);
 }
+
+input[type=checkbox] { display:none; } /* to hide the checkbox itself */
+input[type=checkbox] + label:before {
+  font-family: FontAwesome;
+  display: inline-block;
+  font-weight: 900; /* not working for some reason, should make checkbox solid */
+}
+
+input[type=checkbox] + label:before { content: "\f0c8"; } /* unchecked icon */
+input[type=checkbox] + label:before { letter-spacing: 10px; } /* space between checkbox and label */
+
+input[type=checkbox]:checked + label:before { content: "\f14a"; } /* checked icon */
+input[type=checkbox]:checked + label:before { letter-spacing: 10px; } /* allow space for check mark */
