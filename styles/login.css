@@ -2,16 +2,16 @@
     position: absolute;
     width: 101.79px;
     height: 101.79px;
-    left: calc(50% - 101.79px/2 - 462.6px);
-    top: calc(50% - 101.79px/2 - 224.7px);
+    left: calc(50% - 101.79px/2 - 400.1px);
+    top: calc(50% - 101.79px/2 - 218.1px);
 }
 
 #logo-text {
     position: absolute;
     width: 263px;
     height: 96px;
-    left: calc(50% - 263px/2 - 242px);
-    top: calc(50% - 96px/2 - 224.6px);
+    left: calc(50% - 263px/2 - 179.5px);
+    top: calc(50% - 96px/2 - 218px);
 
     font-size: 64px;
     line-height: 96px;
@@ -30,8 +30,8 @@
     position: absolute;
     width: 427px;
     height: 90px;
-    left: calc(50% - 427px/2 - 300px);
-    top: calc(50% - 90px/2 - 82.6px);
+    left: calc(50% - 427px/2 - 237.5px);
+    top: calc(50% - 90px/2 - 76px);
 
     font-weight: 300;
     font-size: 20px;
@@ -47,8 +47,8 @@
     position: absolute;
     width: 334px;
     height: 56px;
-    left: calc(50% - 334px/2 + 290.5px);
-    top: calc(50% - 56px/2 - 189.6px);
+    left: calc(50% - 334px/2 + 275px);
+    top: calc(50% - 56px/2 - 190px);
 
     font-weight: 600;
     font-size: 34px;
@@ -62,8 +62,8 @@
     position: absolute;
     width: 334px;
     height: 32px;
-    left: calc(50% - 334px/2 + 289.5px);
-    top: calc(50% - 32px/2 - 82.6px);
+    left: calc(50% - 334px/2 + 274px);
+    top: calc(50% - 32px/2 - 83px);
 
     font-size: 20px;
     line-height: 30px;
@@ -77,8 +77,8 @@
     position: absolute;
     width: 334px;
     height: 32px;
-    left: calc(50% - 334px/2 + 289.5px);
-    top: calc(50% - 32px/2 + 22.4px);
+    left: calc(50% - 334px/2 + 274px);
+    top: calc(50% - 32px/2 + 22px);
 
     font-size: 20px;
     line-height: 30px;
@@ -92,16 +92,16 @@
     position: absolute;
     width: 17px;
     height: 17px;
-    left: calc(50% - 17px/2 + 131px);
-    top: calc(50% - 19px/2 + 102.9px);
+    left: calc(50% - 17px/2 + 115.5px);
+    top: calc(50% - 19px/2 + 102.5px);
 }
 
 #login-remember-text {
     position: absolute;
     width: 319px;
     height: 31px;
-    left: calc(50% - 319px/2 + 310px);
-    top: calc(50% - 31px/2 + 105.9px);
+    left: calc(50% - 319px/2 + 294.5px);
+    top: calc(50% - 31px/2 + 105.5px);
 
     font-size: 16px;
     line-height: 24px;
@@ -112,8 +112,8 @@
 #login-username-caption {
     position: absolute;
     width: 319px;
-    left: calc(50% - 319px/2 + 281px);
-    top: calc(50% - 73px/2 - 16.1px);
+    left: calc(50% - 319px/2 + 265.5px);
+    top: calc(50% - 22px/2 - 42px);
 
     font-size: 16px;
     line-height: 24px;
@@ -124,8 +124,8 @@
 #login-password-caption {
     position: absolute;
     width: 319px;
-    left: calc(50% - 319px/2 + 282px);
-    top: calc(50% - 73px/2 + 84.9px);
+    left: calc(50% - 319px/2 + 266.5px);
+    top: calc(50% - 23px/2 + 59.5px);
 
     font-size: 16px;
     line-height: 24px;
@@ -137,20 +137,21 @@
     position: absolute;
     width: 335px;
     height: 56px;
-    left: calc(50% - 335px/2 + 289px);
-    top: calc(50% - 56px/2 + 191.4px);
+    left: calc(50% - 335px/2 + 273.5px);
+    top: calc(50% - 56px/2 + 191px);
 
     font-size: 22px;
     line-height: 33px;
     text-align: center;
 
-    color: #0B0E1F;
-    background: #F5D6FF;
+    color: #F5D6FF;
+    background: #12122A;
     border-radius: 30px;
 }
 
 #login-submit:hover {
-    background-color: #7A6B7F;
+    color: #0B0E1F;
+    background: #F5D6FF;
 }
 
 #login-rectangle1 {
