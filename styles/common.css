@@ -82,10 +82,10 @@ body.loaded {
 }
 
 #titlebar {
-    padding: 3px;
+    padding: 4px;
     display: block;
     position: fixed;
-    height: 28px;
+    height: 26px;
     width: 100%;
 }
 
@@ -101,7 +101,7 @@ body.loaded {
     grid-template-columns: repeat(3, 46px);
     position: absolute;
     top: 0;
-    right: 6px;
+    right: 8px;
     height: 30px;
     font-size: 10px;
 }

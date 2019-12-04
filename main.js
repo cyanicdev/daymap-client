@@ -7,17 +7,23 @@ const store = new Store();
 let win;
 
 function createWindow() {
-    if (process.platform == 'darwin') {
-        win = new BrowserWindow({ width: 1200, height: 800, minWidth: 1200, minHeight: 800, webPreferences: { nodeIntegration: true }, backgroundColor: '#FFF', titleBarStyle: 'hidden' });
-    } else {
+
+    if (process.platform == 'win32') {
+        // Windows
         win = new BrowserWindow({ width: 1200, height: 800, minWidth: 1200, minHeight: 800, webPreferences: { nodeIntegration: true }, backgroundColor: '#FFF', frame: false });
+    } else {
+        // Mac and Linux
+        win = new BrowserWindow({ width: 1200, height: 800, minWidth: 1200, minHeight: 800, webPreferences: { nodeIntegration: true }, backgroundColor: '#FFF', titleBarStyle: 'hidden' });
     }
+
     Menu.setApplicationMenu(null);
-    win.webContents.openDevTools({ mode: "detach" })
+    win.webContents.openDevTools({ mode: "detach" });
+
     win.loadFile('index.html');
     win.on('closed', () => {
         win = null;
     });
+
 }
 
 app.on('ready', createWindow); 

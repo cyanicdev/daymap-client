@@ -27,10 +27,8 @@ document.onreadystatechange = () => {
 };
 
 function handleWindowControls() {
-    if(remote.process.platform == 'darwin') {
-        let menuButtons = document.getElementById('window-controls');
-        menuButtons.parentNode.removeChild(menuButtons);
-    } else {
+    if(process.platform == "win32") {
+        // Windows
         let win = remote.getCurrentWindow();
 
         document.getElementById('min-button').addEventListener("click", event => {
@@ -60,5 +58,13 @@ function handleWindowControls() {
                 document.body.classList.remove('maximized');
             }
         }
+    } else if(process.platform == 'darwin') {
+        // Mac
+        let menuButtons = document.getElementById('window-controls');
+        menuButtons.parentNode.removeChild(menuButtons);
+    } else {
+        // Linux
+        let titlebar = document.getElementById('titlebar');
+        titlebar.parentNode.removeChild(titlebar);
     }
 }
