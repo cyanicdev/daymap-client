@@ -1,7 +1,13 @@
 # daymap-client
-A simple client for Daymap using webview and Rust.
+A simple client for Daymap using Electron.
 
-To use update.bat to update the resource file, first install **inline-assets**
+To use, first install all dev dependencies
 ```
-npm install -g inline-assets
+cd daymap-client
+npm install
+```
+
+Then, simply start the client
+```
+npm start
 ```
