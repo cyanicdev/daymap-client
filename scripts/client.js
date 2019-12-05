@@ -51,9 +51,9 @@ window.onload = function() {
     if(settings.get('username') && settings.get('lm_password') && settings.get('nt_password')) {
         getUrlWithAuthHashed("https://daymap.gihs.sa.edu.au/daymap/student/dayplan.aspx", settings.get('username'), settings.get('lm_password').data, settings.get('nt_password').data, (err, res) => {
             if(!(err || res.statusCode != 200)) {
-                document.body.classList.add("loaded");
                 loginSuccess(res.body);
             }
+            document.body.classList.add("loaded");
         });
     } else {
         document.body.classList.add("loaded");
