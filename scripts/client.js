@@ -42,7 +42,7 @@ function loginSuccess(content) {
     let p = document.createElement("p");
     p.appendChild(document.createTextNode(content));
 
-    gebi("main-screen").appendChild(p);
+    //gebi("main-screen").appendChild(p);
 
     changeScreen("main-screen");
 }

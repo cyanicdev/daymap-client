@@ -29,7 +29,7 @@
 
 #welcome-text {
     position: absolute;
-    width: 427px;
+    width: 350px;
     height: 90px;
     left: calc(50% - 427px/2 - 237.5px);
     top: calc(50% - 90px/2 - 76px);
