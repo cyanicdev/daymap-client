@@ -12,7 +12,8 @@ Once we reach mvp we'll be releasing builds for Windows, Linux and Mac (ahh, the
 ### Wait, I go to *less superior highschool*, can I still use this?
 Hypothetically it should work, but with different schools using slightly different versions of Daymap, things are a bit too prone to break for us to officially support different schools. That said, if you're savvy enough to get it working at your school without problem, feel free to submit a pull request!
 
-\
+
+
 ## Installation
 
 It's easy peasy! Just clone the repo, cd into it, and install all dev dependencies like so!

@@ -2,7 +2,33 @@ nav {
     background-color: #12122B;
     color: #F5D6FF;
     width: 100%;
-    height: 62px;
-    left: 0px;
-    top: 0px;
+    height: auto;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    display: inline-block;
+}
+
+nav span {
+    text-align: center;
+    width: 60px;
+    display: inline-block;
+    font-size: 12px;
+    padding: 15px 20px;
+    margin: 0 10px;
+}
+
+.nav-target {
+    position: absolute;
+    border-bottom: 4px solid blue;
+    display: inline-block;
+    left: calc(1*125px); /* nth element is underlined when item n-1 is multiplied by 125 px. Need to handle this in JS. */
+    bottom: 0;
+}
+
+.user-prefs {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding: 15px 30px;
 }
