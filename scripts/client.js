@@ -53,7 +53,10 @@ window.onload = function() {
             if(!(err || res.statusCode != 200)) {
                 loginSuccess(res.body);
             }
-            document.body.classList.add("loaded");
+            
+            sleep(200).then(() => {
+                document.body.classList.add("loaded");
+            })
         });
     } else {
         document.body.classList.add("loaded");
