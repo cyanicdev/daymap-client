@@ -31,14 +31,11 @@
     position: absolute;
     width: 350px;
     height: 90px;
-    left: calc(50% - 427px/2 - 237.5px);
-    top: calc(50% - 90px/2 - 76px);
+    left: calc(50% - 427px/2 - 230px);
+    top: calc(50% - 90px/2 - 100px);
 
     font-weight: 300;
-    font-size: 14px;
-    line-height: 30px;
-    display: flex;
-    align-items: center;
+    font-size: 16px;
     text-align: justify;
 
     color: #F5D6FF;
@@ -112,11 +109,10 @@
 
 #login-username-caption {
     position: absolute;
-    width: 319px;
     left: calc(50% - 319px/2 + 265.5px);
     top: calc(50% - 22px/2 - 59px);
 
-    font-size: 12px;
+    font-size: 13px;
     line-height: 24px;
 
     color: #F5D6FF;
@@ -124,11 +120,10 @@
 
 #login-password-caption {
     position: absolute;
-    width: 319px;
     left: calc(50% - 319px/2 + 266.5px);
     top: calc(50% - 23px/2 + 42.5px);
 
-    font-size: 12px;
+    font-size: 13px;
     line-height: 24px;
 
     color: #F5D6FF;
@@ -141,7 +136,7 @@
     left: calc(50% - 335px/2 + 273.5px);
     top: calc(50% - 56px/2 + 191px);
 
-    font-size: 16px;
+    font-size: 18px;
     line-height: 33px;
     text-align: center;
 
@@ -183,7 +178,6 @@ input[type=checkbox] { display:none; } /* to hide the checkbox itself */
 input[type=checkbox] + label:before {
   font-family: FontAwesome;
   display: inline-block;
-  font-weight: 900; /* not working for some reason, should make checkbox solid */
 }
 
 input[type=checkbox] + label:before { content: "\f0c8"; } /* unchecked icon */

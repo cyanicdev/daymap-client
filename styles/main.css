@@ -11,24 +11,27 @@ nav {
 
 nav span {
     text-align: center;
-    width: 60px;
+    width: 70px;
     display: inline-block;
-    font-size: 12px;
+    font-size: 13px;
     padding: 15px 20px;
     margin: 0 10px;
 }
 
 .nav-target {
+    width: 70px;
     position: absolute;
-    border-bottom: 4px solid blue;
+    border-bottom: 4px solid #F5D6FF;
     display: inline-block;
-    left: calc(1*125px); /* nth element is underlined when item n-1 is multiplied by 125 px. Need to handle this in JS. */
+    left: calc(1*134px); /* nth element is underlined when item n-1 is multiplied by 125 px. Need to handle this in JS. */
     bottom: 0;
 }
 
 .user-prefs {
-    display: inline-block;
+    line-height: 50px !important;
+    height: 50px;
     position: absolute;
+    bottom: 0;
     right: 0;
-    padding: 15px 30px;
+    padding: 0px 30px;
 }

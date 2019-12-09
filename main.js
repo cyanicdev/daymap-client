@@ -1,4 +1,4 @@
-const { app, BrowserWindow, Menu } = require('electron');
+const { app, BrowserWindow } = require('electron');
 const httpntlm = require('node-http-ntlm');
 const Store = require('electron-store');
 
@@ -16,8 +16,7 @@ function createWindow() {
         win = new BrowserWindow({ width: 1024, height: 640, minWidth: 1024, minHeight: 640, webPreferences: { nodeIntegration: true }, backgroundColor: '#0B0E1F', titleBarStyle: 'hidden' });
     }
 
-    Menu.setApplicationMenu(null);
-    win.webContents.openDevTools({ mode: "detach" });
+    win.removeMenu();
 
     win.loadFile('index.html');
     win.on('closed', () => {
