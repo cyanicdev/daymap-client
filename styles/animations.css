@@ -8,23 +8,43 @@
 }
 
 @keyframes push-up-in {
-    0% { transform: translate(0px, -100%); }
+    0% { transform: translate(0px, 100%); }
     100% { transform: translate(0px, 0px); }
 }
 
 @keyframes push-up-out {
     0% { transform: translate(0px, 0px); }
-    100% { transform: translate(0px, 100%); }
+    100% { transform: translate(0px, -100%); }
 }
 
 @keyframes push-down-in {
-    0% { transform: translate(0px, 100%); }
+    0% { transform: translate(0px, -100%); }
     100% { transform: translate(0px, 0px); }
 }
 
 @keyframes push-down-out {
     0% { transform: translate(0px, 0px); }
-    100% { transform: translate(0px, -100%); }
+    100% { transform: translate(0px, 100%); }
+}
+
+@keyframes push-left-in {
+    0% { transform: translate(100%, 0px); }
+    100% { transform: translate(0px, 0px); }
+}
+
+@keyframes push-left-out {
+    0% { transform: translate(0px, 0px); }
+    100% { transform: translate(-100%, 0px); }
+}
+
+@keyframes push-right-in {
+    0% { transform: translate(-100%, 0px); }
+    100% { transform: translate(0px, 0px); }
+}
+
+@keyframes push-right-out {
+    0% { transform: translate(0px, 0px); }
+    100% { transform: translate(100%, 0px); }
 }
 
 .shake {
@@ -45,4 +65,20 @@
 
 .push-down-out {
     animation: push-down-out 0.5s;
+}
+
+.push-left-in {
+    animation: push-left-in 0.5s;
+}
+
+.push-left-out {
+    animation: push-left-out 0.5s;
+}
+
+.push-right-in {
+    animation: push-right-in 0.5s;
+}
+
+.push-right-out {
+    animation: push-right-out 0.5s;
 }

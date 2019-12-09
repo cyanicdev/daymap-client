@@ -39,12 +39,8 @@ function login() {
 }
 
 function loginSuccess(content) {
-    let p = document.createElement("p");
-    p.appendChild(document.createTextNode(content));
-
-    //gebi("main-screen").appendChild(p);
-
-    changeScreen("main-screen");
+    gebi("menu").classList.remove("hidden");
+    changeScreenFade(gebi("login-screen"), gebi("feed-screen"));
 }
 
 window.onload = function() {
@@ -61,10 +57,10 @@ window.onload = function() {
     } else {
         document.body.classList.add("loaded");
     }
+}
 
-    document.addEventListener("keyup", function(event) {
-        if (event.keyCode === 13) {
-            login();
-        }
-    });
+function pressEnter(event) {
+    if (event.keyCode === 13) {
+        login();
+    }
 }

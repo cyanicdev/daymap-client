@@ -1,29 +1,33 @@
-nav {
+#menu {
     background-color: #12122B;
     color: #F5D6FF;
     width: 100%;
-    height: auto;
+    height: 50px;
     left: 0;
     bottom: 0;
     position: absolute;
     display: inline-block;
 }
 
-nav span {
+#menu span {
     text-align: center;
-    width: 70px;
+    width: 85px;
     display: inline-block;
     font-size: 13px;
     padding: 15px 20px;
-    margin: 0 10px;
+    cursor: pointer;
 }
 
-.nav-target {
-    width: 70px;
+#menu span:hover {
+    opacity: 0.5;
+}
+
+#menu-selected {
+    width: 125px;
     position: absolute;
     border-bottom: 4px solid #F5D6FF;
     display: inline-block;
-    left: calc(1*134px); /* nth element is underlined when item n-1 is multiplied by 125 px. Need to handle this in JS. */
+    left: 0;
     bottom: 0;
 }
 
