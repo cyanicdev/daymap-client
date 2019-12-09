@@ -1,7 +1,7 @@
 #days {
     width: 100%;
-    height: 50px;
-    background: #12122B; 
+    height: 40px;
+    font-size: 12px;
 }
 
 #days ul {
@@ -16,16 +16,44 @@
     list-style: none;
     text-align: center;
     line-height: 50px;
-    text-transform: uppercase;
-    font-weight: 300;
+    /* text-transform: uppercase; */
+    font-weight: 500;
 }
 
 #testLesson {
+    position: relative;
     box-sizing: border-box;
     padding: 5px;
     width: calc(20% - 10px);
     height: calc(20% - 16px);
     margin: 5px;
     border-radius: 5px;
-    font-size: 12px;
+    font-size: 11px;
+}
+
+.line1 { background-color: rgba(0, 0, 255, 0.3); }
+.line2 { background-color: rgba(0, 255, 0, 0.3); }
+.line3 { background-color: rgba(255, 0, 255, 0.3); }
+.line4 { background-color: rgba(128, 0, 255, 0.3); }
+.line5 { background-color: rgba(255, 0, 0, 0.3); }
+.line6 { background-color: ; }
+.line7 { background-color: ; }
+.mentorclass { background-color: rgba(0, 217, 255, 0.3); }
+.break { background-color: rgba(255, 255, 255, 0.3); }
+.line0 { background-color: ; }
+.spacer { opacity: 0; }
+
+
+.t-roomnumber {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 5px;
+}
+
+.t-duration {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: 5px;
 }
