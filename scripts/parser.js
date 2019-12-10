@@ -6,9 +6,6 @@ function parseTimetable(content) {
     parsedContent = parser.parseFromString(content, 'text/html');
 
     //console.log(content.getElementsByClassName("PlanClass"));
-
     
-    console.log(parsedContent.getElementById('ctl00_cp_spnTimetable'));
-    // pls don't delete mitch just yet
     createTimetable(parsedContent.getElementById('ctl00_cp_spnTimetable').childNodes[0].childNodes[0]);
 }
