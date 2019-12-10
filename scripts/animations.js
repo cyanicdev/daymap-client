@@ -10,12 +10,16 @@ function shake(element) {
     }, 500);
 }
 
-function changeScreenFade(oldScreen, newScreen) {
+function changeScreenFade(newScreen) {
+    let oldScreen = gebc("active-screen")[0];
     oldScreen.className = "inactive-screen";
     newScreen.className = "active-screen";
+
+    showOrHideMenu(newScreen);
 }
 
-function changeScreenPushUp(oldScreen, newScreen) {
+function changeScreenPushUp(newScreen) {
+    let oldScreen = gebc("active-screen")[0];
     oldScreen.className = "inactive-screen";
     oldScreen.classList.add("push-up-out");
     newScreen.className = "active-screen";
@@ -25,9 +29,12 @@ function changeScreenPushUp(oldScreen, newScreen) {
         oldScreen.classList.remove("push-up-out");
         newScreen.classList.remove("push-up-in");
     }, 500);
+
+    showOrHideMenu(newScreen);
 }
 
-function changeScreenPushDown(oldScreen, newScreen) {
+function changeScreenPushDown(newScreen) {
+    let oldScreen = gebc("active-screen")[0];
     oldScreen.className = "inactive-screen";
     oldScreen.classList.add("push-down-out");
     newScreen.className = "active-screen";
@@ -37,9 +44,12 @@ function changeScreenPushDown(oldScreen, newScreen) {
         oldScreen.classList.remove("push-down-out");
         newScreen.classList.remove("push-down-in");
     }, 500);
+
+    showOrHideMenu(newScreen);
 }
 
-function changeScreenPushLeft(oldScreen, newScreen) {
+function changeScreenPushLeft(newScreen) {
+    let oldScreen = gebc("active-screen")[0];
     oldScreen.className = "inactive-screen";
     oldScreen.classList.add("push-left-out");
     newScreen.className = "active-screen";
@@ -49,9 +59,12 @@ function changeScreenPushLeft(oldScreen, newScreen) {
         oldScreen.classList.remove("push-left-out");
         newScreen.classList.remove("push-left-in");
     }, 500);
+
+    showOrHideMenu(newScreen);
 }
 
-function changeScreenPushRight(oldScreen, newScreen) {
+function changeScreenPushRight(newScreen) {
+    let oldScreen = gebc("active-screen")[0];
     oldScreen.className = "inactive-screen";
     oldScreen.classList.add("push-right-out");
     newScreen.className = "active-screen";
@@ -61,4 +74,14 @@ function changeScreenPushRight(oldScreen, newScreen) {
         oldScreen.classList.remove("push-right-out");
         newScreen.classList.remove("push-right-in");
     }, 500);
+
+    showOrHideMenu(newScreen);
+}
+
+function showOrHideMenu(element) {
+    if(element.parentElement.tagName == "MAIN") {
+        gebi("menu").classList.remove("hidden");
+    } else {
+        gebi("menu").classList.add("hidden");
+    }
 }

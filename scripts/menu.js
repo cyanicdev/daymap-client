@@ -12,10 +12,10 @@ function changeTab(tabNum) {
 
     if(lastTab < selectedTab) {
         // Going right
-        changeScreenPushLeft(gebi(tabs[lastTab]), gebi(tabs[selectedTab]));
+        changeScreenPushLeft(gebi(tabs[selectedTab]));
     } else if(lastTab > selectedTab) {
         // Going left
-        changeScreenPushRight(gebi(tabs[lastTab]), gebi(tabs[selectedTab]));
+        changeScreenPushRight(gebi(tabs[selectedTab]));
     }
 
     let tabIndicatior = gebi("menu-selected");

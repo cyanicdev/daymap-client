@@ -39,8 +39,8 @@ function login() {
 }
 
 function loginSuccess(content) {
-    gebi("menu").classList.remove("hidden");
-    changeScreenFade(gebi("login-screen"), gebi("feed-screen"));
+    parseTimetable(content);
+    changeScreenFade(gebi("feed-screen"));
 }
 
 window.onload = function() {

@@ -67,7 +67,7 @@ html, body { height: 100%; overflow: hidden; }
 body {
     opacity: 0;
     transition: all 1s;
-    color: white;
+    color: #F5D6FF;
     background-color: #0B0E1F;
 }
 
@@ -124,6 +124,7 @@ main > div {
 }
 
 #window-controls .button {
+    color: white;
     grid-row: 1 / span 1;
     display: flex;
     justify-content: center;
@@ -180,11 +181,6 @@ main > div {
 
 .centered {
     display: flex;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
 }
 
 .centered > * {
