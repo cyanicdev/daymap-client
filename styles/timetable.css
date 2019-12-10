@@ -72,16 +72,16 @@
     font-weight: 300;
 }
 
-.line1 { background-color: rgba(0, 0, 255, 0.3); }
-.line2 { background-color: rgba(0, 255, 0, 0.3); }
-.line3 { background-color: rgba(255, 0, 255, 0.3); }
-.line4 { background-color: rgba(128, 0, 255, 0.3); }
-.line5 { background-color: rgba(255, 0, 0, 0.3); }
-.line6 { background-color: rgba(255, 255, 0, 0.3); }
-.line7 { background-color: rgba(255, 128, 0, 0.3); }
-.mentorclass { background-color: rgba(0, 255, 255, 0.3); }
-.break { background-color: rgba(255, 255, 255, 0.3); }
-.line0 { background-color: rgba(128, 255, 255, 0.3); }
+.line1 { background-color: rgba(0, 0, 255, 0.4); }
+.line2 { background-color: rgba(0, 255, 0, 0.4); }
+.line3 { background-color: rgba(255, 0, 255, 0.4); }
+.line4 { background-color: rgba(128, 0, 255, 0.4); }
+.line5 { background-color: rgba(255, 0, 0, 0.4); }
+.line6 { background-color: rgba(255, 255, 0, 0.4); }
+.line7 { background-color: rgba(255, 128, 0, 0.4); }
+.mentorclass { background-color: rgba(0, 255, 255, 0.4); }
+.break { background-color: rgba(255, 255, 255, 0.4); }
+.line0 { background-color: rgba(128, 255, 255, 0.4); }
 .spacer { opacity: 0; }
 
 .lesson-roomnumber {

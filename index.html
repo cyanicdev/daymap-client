@@ -14,7 +14,7 @@
         <script src="scripts/client.js"></script>
         <script src="scripts/menu.js"></script>
         <script src="scripts/parser.js"></script>
-        <script src="scripts/timetable.js"></script>
+        <!-- i moved it after the page is loaded <script src="scripts/timetable.js"></script> -->
 
         <script src="https://kit.fontawesome.com/e15575d67d.js"></script>
     </head>
@@ -76,8 +76,7 @@
                     </div>
     
                     <div id="monday">
-                        <div class="lesson mentorclass" style="height: calc(2.5% - 5px);">
-                        </div>
+                        <div class="lesson mentorclass" style="height: calc(2.5% - 5px);"></div>
         
                         <div class="lesson line1" style="height: calc(13.75% - 5px);">
                             <p class="lesson-classname">11 Media Studies</p>
@@ -165,9 +164,117 @@
                             <p class="lesson-duration">9:00 - 10:15</p>
                         </div>
                     </div>
-                    <div id="wednesday"></div>
-                    <div id="thursday"></div>
-                    <div id="friday"></div>
+                    <div id="wednesday">
+                        <div class="lesson spacer" style="height: calc(16.25% - 5px);"></div>
+                        <div class="lesson mentorclass" style="height: calc(2.5% - 5px);"></div>
+                        <div class="lesson line4" style="height: calc(15% - 5px);">
+                            <p class="lesson-classname">11 Media Studies</p>
+                            <p class="lesson-teacher">Andy Mewett</p>
+                            <p class="lesson-roomnumber">1VM12</p>
+                            <p class="lesson-duration">9:00 - 10:15</p>
+                        </div>
+                        <div class="lesson break" style="height: calc(6.25% - 5px);">
+                            <p class="lesson-classname">Recess</p>
+                            <p class="lesson-duration">10:45 - 11:10</p>
+                        </div>
+                        <div class="lesson line5" style="height: calc(12.5% - 5px);">
+                            <p class="lesson-classname">11 Media Studies</p>
+                            <p class="lesson-teacher">Andy Mewett</p>
+                            <p class="lesson-roomnumber">1VM12</p>
+                            <p class="lesson-duration">9:00 - 10:15</p>
+                        </div>
+                        <div class="lesson line6" style="height: calc(16.25% - 5px);">
+                            <p class="lesson-classname">11 Media Studies</p>
+                            <p class="lesson-teacher">Andy Mewett</p>
+                            <p class="lesson-roomnumber">1VM12</p>
+                            <p class="lesson-duration">9:00 - 10:15</p>
+                        </div>
+                        <div class="lesson break" style="height: calc(11.25% - 5px);">
+                            <p class="lesson-classname">Lunch</p>
+                            <p class="lesson-duration">1:20 - 2:05</p>
+                        </div>
+                        <div class="lesson line3" style="height: calc(20% - 5px);">
+                            <p class="lesson-classname">11 Media Studies</p>
+                            <p class="lesson-teacher">Andy Mewett</p>
+                            <p class="lesson-roomnumber">1VM12</p>
+                            <p class="lesson-duration">9:00 - 10:15</p>
+                        </div>
+                    </div>
+                    <div id="thursday">
+                        <div class="lesson line7" style="height: calc(16.25% - 5px);">
+                            <p class="lesson-classname">11 Media Studies</p>
+                            <p class="lesson-teacher">Andy Mewett</p>
+                            <p class="lesson-roomnumber">1VM12</p>
+                            <p class="lesson-duration">9:00 - 10:15</p>
+                        </div>
+                        <div class="lesson line3" style="height: calc(15% - 5px);">
+                            <p class="lesson-classname">11 Media Studies</p>
+                            <p class="lesson-teacher">Andy Mewett</p>
+                            <p class="lesson-roomnumber">1VM12</p>
+                            <p class="lesson-duration">9:00 - 10:15</p>
+                        </div>
+                        <div class="lesson break" style="height: calc(6.25% - 5px);">
+                            <p class="lesson-classname">Recess</p>
+                            <p class="lesson-duration">10:45 - 11:10</p>
+                        </div>
+                        <div class="lesson line2" style="height: calc(18.75% - 5px);">
+                            <p class="lesson-classname">11 Media Studies</p>
+                            <p class="lesson-teacher">Andy Mewett</p>
+                            <p class="lesson-roomnumber">1VM12</p>
+                            <p class="lesson-duration">9:00 - 10:15</p>
+                        </div>
+                        <div class="lesson mentorclass" style="height: calc(12.5% - 5px);">
+                            <p class="lesson-classname">11 Media Studies</p>
+                            <p class="lesson-teacher">Andy Mewett</p>
+                            <p class="lesson-roomnumber">1VM12</p>
+                            <p class="lesson-duration">9:00 - 10:15</p>
+                        </div>
+                        <div class="lesson break" style="height: calc(11.25% - 5px);">
+                            <p class="lesson-classname">Lunch</p>
+                            <p class="lesson-duration">1:20 - 2:05</p>
+                        </div>
+                        <div class="lesson line1" style="height: calc(20% - 5px);">
+                            <p class="lesson-classname">11 Media Studies</p>
+                            <p class="lesson-teacher">Andy Mewett</p>
+                            <p class="lesson-roomnumber">1VM12</p>
+                            <p class="lesson-duration">9:00 - 10:15</p>
+                        </div>
+                    </div>
+                    <div id="friday">
+                        <div class="lesson mentorclass" style="height: calc(2.5% - 5px);"></div>
+                        <div class="lesson line5" style="height: calc(20% - 5px);">
+                            <p class="lesson-classname">11 Media Studies</p>
+                            <p class="lesson-teacher">Andy Mewett</p>
+                            <p class="lesson-roomnumber">1VM12</p>
+                            <p class="lesson-duration">8:55 - 9:50</p>
+                        </div>
+                        <div class="lesson break" style="height: calc(6.25% - 5px);">
+                            <p class="lesson-classname">Recess</p>
+                            <p class="lesson-duration">10:45 - 11:10</p>
+                        </div>
+                        <div class="lesson line4" style="height: calc(20% - 5px);">
+                            <p class="lesson-classname">11 English</p>
+                            <p class="lesson-teacher">Ellen Morey</p>
+                            <p class="lesson-roomnumber">2FT12</p>
+                            <p class="lesson-duration">11:10 - 12:15</p>
+                        </div>
+                        <div class="lesson line6" style="height: calc(20% - 5px);">
+                            <p class="lesson-classname">11 Physics</p>
+                            <p class="lesson-teacher">Mark Stephenson</p>
+                            <p class="lesson-roomnumber">3HS10</p>
+                            <p class="lesson-duration">12:15 - 1:20</p>
+                        </div>
+                        <div class="lesson break" style="height: calc(11.25% - 5px);">
+                            <p class="lesson-classname">Lunch</p>
+                            <p class="lesson-duration">1:20 - 2:05</p>
+                        </div>
+                        <div class="lesson line7" style="height: calc(20% - 5px);">
+                            <p class="lesson-classname">11 Media Studies</p>
+                            <p class="lesson-teacher">Andy Mewett</p>
+                            <p class="lesson-roomnumber">1VM12</p>
+                            <p class="lesson-duration">9:00 - 10:15</p>
+                        </div>
+                    </div>
                 </div>
     
                 <div id="assessment-screen" class="inactive-screen">
@@ -187,4 +294,5 @@
             </div>
         </div>
     </body>
+    <script src="scripts/timetable.js"></script>
 </html>

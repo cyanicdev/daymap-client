@@ -90,6 +90,7 @@ async function loginSuccess(dayplanResponse) {
     if(timetableResponse.statusCode == 200) {
         let timetableContent = document.createElement('html');
         timetableContent.innerHTML = timetableResponse.body;
+        byeet = timetableContent;
         parseTimetable(timetableContent);
     } else {
         console.log("Error retrieving timetable");
