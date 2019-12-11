@@ -77,9 +77,6 @@ window.onload = function() {
 }
 
 async function loginSuccess(dayplanResponse) {
-    let dayplanContent = document.createElement('html');
-    dayplanContent.innerHTML = dayplanResponse;
-
     // Parallel gettering of them webpages
     let timetable = getUrlWithAuthHashedPromise("https://daymap.gihs.sa.edu.au/daymap/timetable/timetable.aspx", username, lm_password, nt_password);
     let assessment = getUrlWithAuthHashedPromise("https://daymap.gihs.sa.edu.au/daymap/student/assessmentsummary.aspx", username, lm_password, nt_password);
@@ -88,10 +85,7 @@ async function loginSuccess(dayplanResponse) {
     let assessmentResponse = await assessment;
 
     if(timetableResponse.statusCode == 200) {
-        let timetableContent = document.createElement('html');
-        timetableContent.innerHTML = timetableResponse.body;
-        byeet = timetableContent;
-        parseTimetable(timetableContent);
+        parseTimetable(timetableResponse.body);
     } else {
         console.log("Error retrieving timetable");
     }
