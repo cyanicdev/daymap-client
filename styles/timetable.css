@@ -1,7 +1,48 @@
+#monday {
+    position: absolute;
+    width: 20%;
+    height: calc(100% - 55px);
+    left: 0;
+    top: 50px;
+}
+
+#tuesday {
+    position: absolute;
+    width: 20%;
+    height: calc(100% - 55px);
+    left: 20%;
+    top: 50px;
+}
+
+#wednesday {
+    position: absolute;
+    width: 20%;
+    height: calc(100% - 55px);
+    left: 40%;
+    top: 50px;
+}
+
+#thursday {
+    position: absolute;
+    width: 20%;
+    height: calc(100% - 55px);
+    left: 60%;
+    top: 50px;
+}
+
+#friday {
+    position: absolute;
+    width: 20%;
+    height: calc(100% - 55px);
+    left: 80%;
+    top: 50px;
+}
+
 #days {
+    background-color: #12122B;
     width: 100%;
-    height: 40px;
-    font-size: 12px;
+    height: 50px;
+    font-size: 13px;
 }
 
 #days ul {
@@ -20,15 +61,15 @@
     font-weight: 500;
 }
 
-#testLesson {
+.lesson {
     position: relative;
     box-sizing: border-box;
     padding: 5px;
-    width: calc(20% - 10px);
-    height: calc(20% - 16px);
+    width: calc(100% - 10px);
     margin: 5px;
-    border-radius: 5px;
-    font-size: 11px;
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: 300;
 }
 
 .line1 { background-color: rgba(0, 0, 255, 0.3); }
@@ -36,24 +77,20 @@
 .line3 { background-color: rgba(255, 0, 255, 0.3); }
 .line4 { background-color: rgba(128, 0, 255, 0.3); }
 .line5 { background-color: rgba(255, 0, 0, 0.3); }
-.line6 { background-color: ; }
-.line7 { background-color: ; }
-.mentorclass { background-color: rgba(0, 217, 255, 0.3); }
+.line6 { background-color: rgba(255, 255, 0, 0.3); }
+.line7 { background-color: rgba(255, 128, 0, 0.3); }
+.mentorclass { background-color: rgba(0, 255, 255, 0.3); }
 .break { background-color: rgba(255, 255, 255, 0.3); }
-.line0 { background-color: ; }
+.line0 { background-color: rgba(128, 255, 255, 0.3); }
 .spacer { opacity: 0; }
 
-
-.t-roomnumber {
+.lesson-roomnumber {
     position: absolute;
-    display: block;
-    bottom: 0;
-    left: 5px;
+    bottom: 5px;
 }
 
-.t-duration {
+.lesson-duration {
     position: absolute;
-    display: block;
-    bottom: 0;
+    bottom: 5px;
     right: 5px;
 }

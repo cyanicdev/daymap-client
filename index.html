@@ -37,127 +37,122 @@
                 </div>
             </div>
         </header>
-
-        <div id="login-screen" class="active-screen">
-            <img id="logo-img" src="images/logo.svg">
-            <p id="logo-text">Daymap</p>
-            <p id="welcome-text">Welcome to the unofficial Daymap client, where you can check up on your latest assignments, class changes and Line 0s.</p>
-
-            <div id="login-rectangle1"></div>
-            <div id="login-rectangle2"></div>
-
-            <p id="login-header">Student Login</p>
-
-            <input type="text" id="login-username" onkeyup="pressEnter(event)" placeholder="john.doe">
-            <input type="password" id="login-password" onkeyup="pressEnter(event)" placeholder="••••••••••••">
-            <input type="checkbox" id="login-remember">
-            <label id="login-remember-text" for="login-remember">Remember Login</label>
+        <div id="fadein">
+            <div id="login-screen" class="active-screen">
+                <img id="logo-img" src="images/logo.svg">
+                <p id="logo-text">Daymap</p>
+                <p id="welcome-text">Welcome to the unofficial Daymap client, where you can check up on your latest assignments, class changes and Line 0s.</p>
     
-            <p id="login-username-caption">Username / Student ID</p>
-            <p id="login-password-caption">Password</p>            
-
-            <button id="login-submit" onclick="login()">Connect to Daymap</button>
-        </div>     
+                <div id="login-rectangle1"></div>
+                <div id="login-rectangle2"></div>
+    
+                <p id="login-header">Student Login</p>
+    
+                <input type="text" id="login-username" onkeyup="pressEnter(event)" placeholder="john.doe">
+                <input type="password" id="login-password" onkeyup="pressEnter(event)" placeholder="••••••••••••">
+                <input type="checkbox" id="login-remember">
+                <label id="login-remember-text" for="login-remember">Remember Login</label>
         
-        <main> <!-- Screens contained within here will include the bottom menu bar (#menu) -->
-            <div id="feed-screen" class="inactive-screen">
-                This is your feed
+                <p id="login-username-caption">Username / Student ID</p>
+                <p id="login-password-caption">Password</p>            
+    
+                <button id="login-submit" onclick="login()">Connect to Daymap</button>
+            </div>     
+            
+            <main> <!-- Screens contained within here will include the bottom menu bar (#menu) -->
+                <div id="feed-screen" class="inactive-screen">
+                    This is your feed
+                </div>
+    
+                <div id="timetable-screen" class="inactive-screen">
+                    <div id="days">
+                        <ul>
+                            <li>Monday</li>
+                            <li>Tuesday</li>
+                            <li>Wednesday</li>
+                            <li>Thursday</li>
+                            <li>Friday</li>
+                        </ul>
+                    </div>
+    
+                    <div id="monday">
+                        <div class="lesson mentorclass" style="height: calc(3% - 5px);" class="centered">
+                        </div>
+        
+                        <div class="lesson line1" style="height: calc(13.75% - 5px);">
+                            <p class="lesson-classname">11 Media Studies</p>
+                            <p class="lesson-teacher">Andy Mewett</p>
+                            <p class="lesson-roomnumber">1VM12</p>
+                            <p class="lesson-duration">8:55 - 9:50</p>
+                        </div>
+        
+                        <div class="lesson line2" style="height: calc(13.75% - 5px);">
+                            <p class="lesson-classname">12 Maths Methods</p>
+                            <p class="lesson-teacher">Tom Frossinakis</p>
+                            <p class="lesson-roomnumber">2MA08</p>
+                            <p class="lesson-duration">9:50 - 10:45</p>
+                        </div>
+        
+                        <div class="lesson break" style="height: calc(7% - 5px);">
+                            <p class="lesson-classname">Recess</p>
+                            <p class="lesson-duration">10:45 - 11:10</p>
+                        </div>
+        
+                        <div class="lesson line3" style="height: calc(16.25% - 5px);">
+                            <p class="lesson-classname">11 English</p>
+                            <p class="lesson-teacher">Ellen Morey</p>
+                            <p class="lesson-roomnumber">2FT12</p>
+                            <p class="lesson-duration">11:10 - 12:15</p>
+                        </div>
+        
+                        <div class="lesson line4" style="height: calc(16.25% - 5px);">
+                            <p class="lesson-classname">11 Physics</p>
+                            <p class="lesson-teacher">Mark Stephenson</p>
+                            <p class="lesson-roomnumber">3HS10</p>
+                            <p class="lesson-duration">12:15 - 1:20</p>
+                        </div>
+        
+                        <div class="lesson break" style="height: calc(10% - 5px);">
+                            <p class="lesson-classname">Lunch</p>
+                            <p class="lesson-duration">1:20 - 2:05</p>
+                        </div>
+        
+                        <div class="lesson line5" style="height: calc(20% - 5px);">
+                            <p class="lesson-classname">11 Media Studies</p>
+                            <p class="lesson-teacher">Andy Mewett</p>
+                            <p class="lesson-roomnumber">1VM12</p>
+                            <p class="lesson-duration">9:00 - 10:15</p>
+                        </div>
+                    </div>
+    
+                    <div id="tuesday">
+                        <div class="lesson line6" style="height: 80px;">
+                            <p class="lesson-classname">11 Media Studies</p>
+                            <p class="lesson-teacher">Andy Mewett</p>
+                            <p class="lesson-roomnumber">1VM12</p>
+                            <p class="lesson-duration">9:00 - 10:15</p>
+                        </div>
+                    </div>
+                    <div id="wednesday"></div>
+                    <div id="thursday"></div>
+                    <div id="friday"></div>
+                </div>
+    
+                <div id="assessment-screen" class="inactive-screen">
+                    These are your assessments
+                </div>
+            </main>
+    
+            <div id="menu" class="hidden">
+                <span onclick="changeTab(0)">
+                My Feed</span><span onclick="changeTab(1)">
+                Timetable</span><span onclick="changeTab(2)">
+                Assessment</span>
+    
+                <div id="menu-selected"></div>
+    
+                <i class="user-prefs fas fa-user-circle"></i>
             </div>
-
-            <div id="timetable-screen" style="width: 86%; margin-left: 7%;" class="inactive-screen">
-                <div id="days">
-                    <ul>
-                        <li>Monday</li>
-                        <li>Tuesday</li>
-                        <li>Wednesday</li>
-                        <li>Thursday</li>
-                        <li>Friday</li>
-                    </ul>
-                </div>
-
-                <div id="testLesson" class="mentorclass" style="height: 10px;" class="centered">
-                    <div>
-                        <!--
-                        <p class="t-classname">Mentor Group</p>
-                        <p class="t-duration">9:00 - 10:15</p>
-                        -->
-                    </div>
-                </div>
-
-                <div id="testLesson" class="line1" style="height: 55px;" class="centered">
-                    <div>
-                        <p class="t-classname">11 Media Studies</p>
-                        <p class="t-teacher">Andy Mewett</p>
-                        <p class="t-roomnumber">1VM12</p>
-                        <p class="t-duration">9:00 - 10:15</p>
-                    </div>
-                </div>
-
-                <div id="testLesson" class="line2" style="height: 55px;" class="centered">
-                    <div>
-                        <p class="t-classname">11 Media Studies</p>
-                        <p class="t-teacher">Andy Mewett</p>
-                        <p class="t-roomnumber">1VM12</p>
-                        <p class="t-duration">9:00 - 10:15</p>
-                    </div>
-                </div>
-
-                <div id="testLesson" class="break" style="height: 25px;" class="centered">
-                    <div>
-                        <p class="t-classname">Recess</p>
-                        <p class="t-duration">9:00 to 10:15</p>
-                    </div>
-                </div>
-
-                <div id="testLesson" class="line3" style="height: 65px;" class="centered">
-                    <div>
-                        <p class="t-classname">11 Media Studies</p>
-                        <p class="t-teacher">Andy Mewett</p>
-                        <p class="t-roomnumber">1VM12</p>
-                        <p class="t-duration">9:00 - 10:15</p>
-                    </div>
-                </div>
-
-                <div id="testLesson" class="line4" style="height: 65px;" class="centered">
-                    <div>
-                        <p class="t-classname">11 Media Studies</p>
-                        <p class="t-teacher">Andy Mewett</p>
-                        <p class="t-roomnumber">1VM12</p>
-                        <p class="t-duration">9:00 - 10:15</p>
-                    </div>
-                </div>
-
-                <div id="testLesson" class="break" style="height: 45px;" class="centered">
-                    <div>
-                        <p class="t-classname">Lunch</p>
-                        <p class="t-duration">9:00 - 10:15</p>
-                    </div>
-                </div>
-
-                <div id="testLesson" class="line5" style="height: 80px;" class="centered">
-                    <div>
-                        <p class="t-classname">11 Media Studies</p>
-                        <p class="t-teacher">Andy Mewett</p>
-                        <p class="t-roomnumber">1VM12</p>
-                        <p class="t-duration">9:00 - 10:15</p>
-                    </div>
-                </div>
-            </div>
-
-            <div id="assessment-screen" class="inactive-screen">
-                These are your assessments
-            </div>
-        </main>
-
-        <div id="menu" class="hidden">
-            <span onclick="changeTab(0)">
-            My Feed</span><span onclick="changeTab(1)">
-            Timetable</span><span onclick="changeTab(2)">
-            Assessment</span>
-
-            <div id="menu-selected"></div>
-
-            <i class="user-prefs fas fa-user-circle"></i>
         </div>
     </body>
 </html>

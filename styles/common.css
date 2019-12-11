@@ -65,13 +65,16 @@
 html, body { height: 100%; overflow: hidden; }
 
 body {
-    opacity: 0;
     transition: all 1s;
     color: #F5D6FF;
     background-color: #0B0E1F;
 }
 
-body.loaded {
+#fadein {
+    opacity: 0;
+}
+
+#fadein.loaded {
     opacity: 1;
 }
 

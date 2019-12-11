@@ -1,6 +1,10 @@
-const { getUrlWithAuth, getUrlWithAuthHashed, getStore } = require('electron').remote.require('./main.js');
-const httpntlm = require('node-http-ntlm');
+const { getUrlWithAuth, getUrlWithAuthHashed, getUrlWithAuthHashedPromise, getStore } = require('electron').remote.require('./main.js');
+const httpntlm = require('httpntlm');
 const settings = getStore();
+
+let username = "";
+let lm_password = "";
+let nt_password = "";
 
 function login() {
     let button = gebi("login-submit");
@@ -11,10 +15,10 @@ function login() {
     spinner.classList.add("spinner");
     button.appendChild(spinner);
 
-    username = gebi("login-username").value;
-    password = gebi("login-password").value;
+    user = gebi("login-username").value;
+    pass = gebi("login-password").value;
 
-    getUrlWithAuth("https://daymap.gihs.sa.edu.au/daymap/student/dayplan.aspx", username, password, (err, res) => {
+    getUrlWithAuth("https://daymap.gihs.sa.edu.au/daymap/student/dayplan.aspx", user, pass, (err, res) => {
         if(err || res.statusCode != 200) {
             shake(gebi("login-username"));
             shake(gebi("login-password"));
@@ -22,41 +26,76 @@ function login() {
             shake(gebi("login-password-caption"));
             shake(gebi("login-remember"));
             shake(gebi("login-remember-text"));
+
+            button.innerText = "Connect to Daymap";
+            button.style.backgroundColor = "";
         }
         else {
+            username = user;
+            lm_password = httpntlm.ntlm.create_LM_hashed_password(pass);
+            nt_password = httpntlm.ntlm.create_NT_hashed_password(pass);
+
             if(gebi("login-remember").checked) {
                 settings.set('username', username);
-                settings.set('lm_password', httpntlm.ntlm.create_LM_hashed_password(password));
-                settings.set('nt_password', httpntlm.ntlm.create_NT_hashed_password(password));
+                settings.set('lm_password', lm_password);
+                settings.set('nt_password', nt_password);
             }
 
             loginSuccess(res.body);
         }
-
-        button.innerText = "Connect to Daymap";
-        button.style.backgroundColor = "";
     });
 }
 
-function loginSuccess(content) {
-    parseTimetable(content);
-    changeScreenFade(gebi("feed-screen"));
-}
-
 window.onload = function() {
-    if(settings.get('username') && settings.get('lm_password') && settings.get('nt_password')) {
-        getUrlWithAuthHashed("https://daymap.gihs.sa.edu.au/daymap/student/dayplan.aspx", settings.get('username'), settings.get('lm_password').data, settings.get('nt_password').data, (err, res) => {
+    let spinner = document.createElement("div");
+    spinner.classList.add("spinner");
+    document.body.appendChild(spinner);
+
+    username = settings.get('username');
+    lm_password = settings.get('lm_password');
+    nt_password = settings.get('nt_password');
+
+    if(username && lm_password && nt_password) {
+        lm_password = lm_password.data;
+        nt_password = nt_password.data;
+
+        getUrlWithAuthHashed("https://daymap.gihs.sa.edu.au/daymap/student/dayplan.aspx", username, lm_password, nt_password, (err, res) => {
             if(!(err || res.statusCode != 200)) {
-                loginSuccess(res.body);
+                loginSuccess(res.body).then(() => sleep(200).then(() => {
+                    document.body.removeChild(spinner);
+                    gebi("fadein").classList.add("loaded");
+                }));
+            } else {
+                document.body.removeChild(spinner);
+                gebi("fadein").classList.add("loaded");
             }
-            
-            sleep(200).then(() => {
-                document.body.classList.add("loaded");
-            })
         });
     } else {
-        document.body.classList.add("loaded");
+        document.body.removeChild(spinner);
+        gebi("fadein").classList.add("loaded");
     }
+}
+
+async function loginSuccess(dayplanResponse) {
+    let dayplanContent = document.createElement('html');
+    dayplanContent.innerHTML = dayplanResponse;
+
+    // Parallel gettering of them webpages
+    let timetable = getUrlWithAuthHashedPromise("https://daymap.gihs.sa.edu.au/daymap/timetable/timetable.aspx", username, lm_password, nt_password);
+    let assessment = getUrlWithAuthHashedPromise("https://daymap.gihs.sa.edu.au/daymap/student/assessmentsummary.aspx", username, lm_password, nt_password);
+
+    let timetableResponse = await timetable;
+    let assessmentResponse = await assessment;
+
+    if(timetableResponse.statusCode == 200) {
+        let timetableContent = document.createElement('html');
+        timetableContent.innerHTML = timetableResponse.body;
+        parseTimetable(timetableContent);
+    } else {
+        console.log("Error retrieving timetable");
+    }
+    
+    changeScreenFade(gebi("feed-screen"));
 }
 
 function pressEnter(event) {
