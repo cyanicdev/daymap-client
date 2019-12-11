@@ -7,6 +7,18 @@
     100% { transform: translate(0px, 0px); }
 }
 
+@keyframes spin {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes bob {
+    0% { transform: translate(0px, 0px); }
+    20% { transform: translate(0px, -5px); }
+    60% { transform: translate(0px, 2px); }
+    100% { transform: translate(0px, 0px); }
+}
+
 @keyframes push-up-in {
     0% { transform: translate(0px, 100%); }
     100% { transform: translate(0px, 0px); }
