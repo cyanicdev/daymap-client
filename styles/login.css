@@ -1,4 +1,3 @@
-
 #logo-img {
     position: absolute;
     width: 80px;
@@ -22,7 +21,7 @@
     align-items: center;
     letter-spacing: -0.045em;
 
-    background: linear-gradient(90deg, #D058D3 0%, #8636CB 100%);
+    background: linear-gradient(90deg, var(--foreground-secondary) 0%, var(--foreground-tertiary) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -38,7 +37,7 @@
     font-size: 16px;
     text-align: justify;
 
-    color: #F5D6FF;
+    color: var(--foreground-primary);
 }
 
 #login-header {
@@ -53,7 +52,7 @@
     line-height: 51px;
     text-align: center;
 
-    color: #F5D6FF;
+    color: var(--foreground-primary);
 }
 
 #login-username {
@@ -66,9 +65,9 @@
     font-size: 16px;
     line-height: 30px;
 
-    color: #F5D6FF;
+    color: var(--foreground-primary);
     background: transparent;
-    border-bottom: 2px solid #F5D6FF;
+    border-bottom: 2px solid var(--foreground-primary);
 }
 
 #login-password {
@@ -81,9 +80,9 @@
     font-size: 16px;
     line-height: 30px;
 
-    color: #F5D6FF;
+    color: var(--foreground-primary);
     background: transparent;
-    border-bottom: 2px solid #F5D6FF;
+    border-bottom: 2px solid var(--foreground-primary);
 }
 
 #login-remember {
@@ -104,7 +103,7 @@
     font-size: 14px;
     line-height: 24px;
 
-    color: #F5D6FF;
+    color: var(--foreground-primary);
 }
 
 #login-username-caption {
@@ -115,7 +114,7 @@
     font-size: 13px;
     line-height: 24px;
 
-    color: #F5D6FF;
+    color: var(--foreground-primary);
 }
 
 #login-password-caption {
@@ -126,7 +125,7 @@
     font-size: 13px;
     line-height: 24px;
 
-    color: #F5D6FF;
+    color: var(--foreground-primary);
 }
 
 #login-submit {
@@ -140,36 +139,38 @@
     line-height: 33px;
     text-align: center;
 
-    color: #F5D6FF;
-    background: #12122B;
+    color: var(--foreground-primary);
+    background: var(--background-secondary);
     border-radius: 30px;
 }
 
 #login-submit:hover {
-    color: #0B0E1F;
-    background: #F5D6FF;
+    color: var(--background-primary);
+    background: var(--foreground-primary);
 }
 
 #login-rectangle1 {
+    z-index: -1;
     position: absolute;
     width: 275px;
     height: 534px;
     left: -100px;
     top: -200px;
 
-    background: linear-gradient(179.94deg, rgba(134, 54, 203, 0) 0.03%, rgba(134, 54, 203, 0.5) 95.39%);
+    background: linear-gradient(179.94deg, var(--rectangle-gradient-start) 0.03%, var(--rectangle-gradient-end) 95.39%);
     border-radius: 40px;
     transform: rotate(148.12deg);
 }
 
 #login-rectangle2 {
+    z-index: -1;
     position: absolute;
     width: 275px;
     height: 534px;
     left: 224px;
     top: -200px;
 
-    background: linear-gradient(179.94deg, rgba(134, 54, 203, 0) 0.03%, rgba(134, 54, 203, 0.5) 95.39%);
+    background: linear-gradient(179.94deg, var(--rectangle-gradient-start) 0.03%, var(--rectangle-gradient-end) 95.39%);
     border-radius: 40px;
     transform: rotate(148.12deg);
 }
