@@ -68,10 +68,11 @@
     margin: 5px;
     border-radius: 2px;
     font-size: 12px;
+
     font-weight: 300;
 }
 
-.break { background-color: var(--break); }
+.break { background-color: var(--break); color: rgba(11, 14, 31, 0.9); text-shadow: none; }
 .line0 { background-color: var(--line0); }
 .line1 { background-color: var(--line1); }
 .line2 { background-color: var(--line2); }
