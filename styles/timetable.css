@@ -64,7 +64,7 @@
 .lesson {
     position: relative;
     box-sizing: border-box;
-    padding: 5px;
+    padding: 2px 5px 2px 5px;
     width: calc(100% - 10px);
     margin: 5px;
     border-radius: 2px;
@@ -86,11 +86,11 @@
 
 .lesson-roomnumber {
     position: absolute;
-    bottom: 5px;
+    bottom: 2px;
 }
 
 .lesson-duration {
     position: absolute;
-    bottom: 5px;
+    bottom: 2px;
     right: 5px;
 }
