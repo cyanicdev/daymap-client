@@ -16,6 +16,7 @@ function changeScreenFade(newScreen) {
     newScreen.className = "active-screen";
 
     showOrHideMenu(newScreen);
+    handleLastScreen(oldScreen);
 }
 
 function changeScreenPushUp(newScreen) {
@@ -31,6 +32,7 @@ function changeScreenPushUp(newScreen) {
     }, 500);
 
     showOrHideMenu(newScreen);
+    handleLastScreen(oldScreen);
 }
 
 function changeScreenPushDown(newScreen) {
@@ -46,6 +48,7 @@ function changeScreenPushDown(newScreen) {
     }, 500);
 
     showOrHideMenu(newScreen);
+    handleLastScreen(oldScreen);
 }
 
 function changeScreenPushLeft(newScreen) {
@@ -61,6 +64,7 @@ function changeScreenPushLeft(newScreen) {
     }, 500);
 
     showOrHideMenu(newScreen);
+    handleLastScreen(oldScreen);
 }
 
 function changeScreenPushRight(newScreen) {
@@ -76,12 +80,22 @@ function changeScreenPushRight(newScreen) {
     }, 500);
 
     showOrHideMenu(newScreen);
+    handleLastScreen(oldScreen);
 }
 
 function showOrHideMenu(element) {
     if(element.parentElement.tagName == "MAIN") {
         gebi("menu").classList.remove("hidden");
+        gebt("main")[0].classList.remove("hidden");
     } else {
         gebi("menu").classList.add("hidden");
+        gebt("main")[0].classList.add("hidden");
     }
+}
+
+function handleLastScreen(element) {
+    if(gebc("last-screen")[0]) {
+        gebc("last-screen")[0].className = "inactive-screen";
+    }
+    element.classList.add("last-screen");
 }

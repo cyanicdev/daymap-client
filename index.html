@@ -67,6 +67,10 @@
     
                 <button id="login-submit" onclick="login()">Connect to Daymap</button>
             </div>     
+
+            <div id="settings-screen" class="inactive-screen">
+                <i class="fas fa-times" onclick="changeScreenFade(gebc('last-screen')[0])"></i>
+            </div>
             
             <main> <!-- Screens contained within here will include the bottom menu bar (#menu) -->
                 <div id="feed-screen" class="inactive-screen">
@@ -298,7 +302,7 @@
     
                 <div id="menu-selected"></div>
     
-                <i class="user-prefs fas fa-cog"></i>
+                <i class="user-prefs fas fa-cog" onclick="changeScreenFade(gebi('settings-screen'))"></i>
                 <i class="user-prefs fas fa-user-circle"></i>
             </nav>
         </div>

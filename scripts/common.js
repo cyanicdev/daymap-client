@@ -8,6 +8,10 @@ function gebc(className) {
     return document.getElementsByClassName(className);
 }
 
+function gebt(tagName) {
+    return document.getElementsByTagName(tagName);
+}
+
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
