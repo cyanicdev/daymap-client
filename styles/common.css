@@ -63,18 +63,7 @@
     --foreground-tertiary: #8636CB;
     --rectangle-gradient-start: rgba(134, 54, 203, 0);
     --rectangle-gradient-end: rgba(134, 54, 203, 0.5);
-        /*
-    --break: rgba(255, 255, 255, 0.5);
-    --line0: rgba(128, 255, 255, 0.5); 
-    --line1: rgba(0, 0, 255, 0.5); 
-    --line2: rgba(0, 255, 0, 0.5); 
-    --line3: rgba(255, 0, 255, 0.5); 
-    --line4: rgba(128, 0, 255, 0.5); 
-    --line5: rgba(255, 0, 0, 0.5); 
-    --line6: rgba(255, 255, 0, 0.5); 
-    --line7: rgba(255, 128, 0, 0.5); 
-    --mentor-class: rgba(0, 255, 255, 0.5); 
-    */
+    
     --break: rgba(238, 238, 238, 0.8);
     --line0: rgba(128, 255, 255, 0.7); 
     --line1: rgba(93, 166, 255, 0.7); 
