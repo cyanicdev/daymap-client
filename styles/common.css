@@ -52,6 +52,11 @@
     font-weight: 900;
 }
 
+@font-face {
+    font-family: 'Segoe MDL2 Assets';
+    src: url('../fonts/Segoe/SegMDL2.ttf') format('truetype');
+}
+
 :root {
     --background-primary: #0B0E1F;
     --background-secondary: #12122B;
