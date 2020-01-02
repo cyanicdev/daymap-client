@@ -1,0 +1,72 @@
+#login-screen {
+  background-color: var(--background-primary);
+  height: 100vh;
+  background-image: url("../../assets/img/jeremy-bishop-BuQ-jgeexaQ-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#login-screen form {
+  max-width: 320px;
+  width: 90%;
+  background-color: var(--background-secondary);
+  padding: 40px;
+  border-radius: 4px;
+  color: #fff;
+  box-shadow: 0px 3px 4px rgba(0,0,0,0.2);
+}
+
+#login-screen form .form-control {
+  background-color: var(--background-secondary);
+  border: none;
+  border-bottom: 1px solid #434a52;
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+  color: inherit;
+}
+
+#login-screen .illustration {
+  text-align: center;
+  padding: 2rem 0 2rem;
+}
+
+#login-screen form .btn-primary {
+  background: none;
+  border: none;
+  border-radius: 4px;
+  padding: 11px;
+  box-shadow: none;
+  margin-top: 26px;
+  text-shadow: none;
+  outline: none;
+}
+
+#login-screen form .btn-primary:hover {
+  background: var(--background-hover);
+}
+
+#login-screen form .btn-primary:active {
+  background: var(--background-active);
+  transform: translateY(1px);
+  transition: none;
+}
+
+#login-remember:active ~ .custom-control-label:before {
+  background-color: var(--background-active);
+}
+
+#login-remember:checked ~ .custom-control-label:before {
+  background-color: var(--background-active);
+}
+
+#login-remember:checked ~ .custom-control-label:before {
+  background-color: var(--background-active);
+}
+
+#login-remember ~ .custom-control-label:before {
+  box-shadow: none;
+  background-color: var(--background-hover);
+}
+

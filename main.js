@@ -9,10 +9,10 @@ let win;
 function createWindow() {
     if (process.platform == 'darwin') {
         // Mac
-        win = new BrowserWindow({ width: 1024, height: 640, minWidth: 1024, minHeight: 640, webPreferences: { nodeIntegration: true }, backgroundColor: '#0B0E1F', titleBarStyle: 'hidden' });
+        win = new BrowserWindow({ width: 1024, height: 640, minWidth: 1024, minHeight: 640, webPreferences: { nodeIntegration: true }, backgroundColor: '#1c222a', titleBarStyle: 'hidden' });
     } else {
         // Windows and Linux
-        win = new BrowserWindow({ width: 1024, height: 640, minWidth: 1024, minHeight: 640, webPreferences: { nodeIntegration: true }, backgroundColor: '#0B0E1F', frame: false });
+        win = new BrowserWindow({ width: 1024, height: 640, minWidth: 1024, minHeight: 640, webPreferences: { nodeIntegration: true }, backgroundColor: '#1c222a', frame: false });
     }
 
     win.removeMenu();

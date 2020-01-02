@@ -18,8 +18,10 @@
   "homepage": "https://github.com/cyanicdev/daymap-client#readme",
   "dependencies": {},
   "devDependencies": {
+    "bootstrap": "^4.4.1",
     "electron": "^7.1.2",
     "electron-store": "^5.1.0",
-    "httpntlm": "^1.7.6"
+    "httpntlm": "^1.7.6",
+    "jquery": "^3.4.1"
   }
 }

@@ -1,0 +1,99 @@
+#monday {
+    position: absolute;
+    width: 20%;
+    height: calc(100% - 55px);
+    left: 0;
+    top: 50px;
+}
+
+#tuesday {
+    position: absolute;
+    width: 20%;
+    height: calc(100% - 55px);
+    left: 20%;
+    top: 50px;
+}
+
+#wednesday {
+    position: absolute;
+    width: 20%;
+    height: calc(100% - 55px);
+    left: 40%;
+    top: 50px;
+}
+
+#thursday {
+    position: absolute;
+    width: 20%;
+    height: calc(100% - 55px);
+    left: 60%;
+    top: 50px;
+}
+
+#friday {
+    position: absolute;
+    width: 20%;
+    height: calc(100% - 55px);
+    left: 80%;
+    top: 50px;
+}
+
+#days {
+    background-color: var(--background-secondary);
+    width: 100%;
+    height: 50px;
+    font-size: 13px;
+}
+
+#days ul {
+    position: absolute;
+    width: 100%;
+}
+
+#days ul li {
+    position: relative;
+    float: left;
+    width: 20%;
+    list-style: none;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 500;
+}
+
+.lesson {
+    position: relative;
+    box-sizing: border-box;
+    padding: 2px 5px 2px 5px;
+    width: calc(100% - 10px);
+    margin: 5px;
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.lesson * {
+    margin: 0;
+}
+
+.break { background-color: var(--break); color: var(--background-primary); }
+.line0 { background-color: var(--line0); }
+.line1 { background-color: var(--line1); }
+.line2 { background-color: var(--line2); }
+.line3 { background-color: var(--line3); }
+.line4 { background-color: var(--line4); }
+.line5 { background-color: var(--line5); }
+.line6 { background-color: var(--line6); }
+.line7 { background-color: var(--line7); }
+.mentorclass { background-color: var(--mentor-class); }
+.spacer { opacity: 0; }
+
+.lesson-roomnumber {
+    position: absolute;
+    bottom: 2px;
+}
+
+.lesson-duration {
+    position: absolute;
+    bottom: 2px;
+    right: 5px;
+}
