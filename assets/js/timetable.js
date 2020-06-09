@@ -91,5 +91,5 @@ function createTimetable(classes) {
         }
     });
 
-    // there has got to be a more efficient way to do this 
+    // there has got to be a more efficient way to do this, right?
 }

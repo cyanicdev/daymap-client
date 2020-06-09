@@ -95,7 +95,13 @@ async function loginSuccess(dayplanResponse) {
     if(timetableResponse.statusCode == 200) {
         parseTimetable(timetableResponse.body);
     } else {
-        console.log("Error retrieving timetable");
+        console.warn("Error retrieving timetable");
+    }
+
+    if (assessmentResponse.statusCode == 200) {
+        parseAssessment(assessmentResponse.body);
+    } else {
+        console.warn("Error retrieving assessments");
     }
     
     changeScreenFade(gebi("feed-screen"));

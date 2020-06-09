@@ -137,3 +137,12 @@ function parseTimetable(content) {
 
     createTimetable(classes);
 }
+
+function parseAssessment(content) {
+
+    let parsedContent = parser.parseFromString(content, 'text/html');
+
+    let classArray = parsedContent.getElementsByClassName('SORTTABLE')[0];
+
+    createAssessmentTable(classArray.innerHTML);
+}
