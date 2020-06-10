@@ -8,7 +8,7 @@ function createTimetable(classes) {
             e.children[2].innerText = classes[0][0].room;
         } else {
             e.children[0].innerText = "Free";
-            e.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+            e.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
         }
     });
 
@@ -19,7 +19,7 @@ function createTimetable(classes) {
             e.children[2].innerText = classes[0][1].room;
         } else {
             e.children[0].innerText = "Free";
-            e.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+            e.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
         }
     });
 
@@ -30,7 +30,7 @@ function createTimetable(classes) {
             e.children[2].innerText = classes[0][2].room;
         } else {
             e.children[0].innerText = "Free";
-            e.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+            e.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
         }
     });
 
@@ -41,7 +41,7 @@ function createTimetable(classes) {
             e.children[2].innerText = classes[0][3].room;
         } else {
             e.children[0].innerText = "Free";
-            e.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+            e.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
         }
     });
 
@@ -52,7 +52,7 @@ function createTimetable(classes) {
             e.children[2].innerText = classes[0][4].room;
         } else {
             e.children[0].innerText = "Free";
-            e.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+            e.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
         }
     });
 
@@ -63,7 +63,7 @@ function createTimetable(classes) {
             e.children[2].innerText = classes[1][0].room;
         } else {
             e.children[0].innerText = "Free";
-            e.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+            e.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
         }
     });
 
@@ -74,7 +74,7 @@ function createTimetable(classes) {
             e.children[2].innerText = classes[1][1].room;
         } else {
             e.children[0].innerText = "Free";
-            e.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+            e.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
         }
     });
 
@@ -86,7 +86,7 @@ function createTimetable(classes) {
                 e.children[2].innerText = classes[1][2].room;
             } else {
                 e.children[0].innerText = "Free";
-                e.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+                e.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
             }
         }
     });

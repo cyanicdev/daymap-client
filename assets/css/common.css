@@ -1,18 +1,20 @@
 @font-face {
     font-family: 'Segoe MDL2 Assets';
-    src: url('../fonts/Segoe/SegMDL2.ttf') format('truetype');
+    src: url('../SegMDL2.ttf') format('truetype');
 }
 
 :root {
     --background-primary: #1c222a;
+    --background-primary-transparent: #1c222a40;
     --background-secondary: #1e2833;
+    --background-secondary-transparent: #1e283340;
     --background-hover: #303a47;
     --background-active: #3a4451;
     --background-modifier-hover: rgba(255, 255, 255, 0.05);
     --background-modifier-active: rgba(255, 255, 255, 0.1);
     --foreground-primary: white;
     
-    --break: rgba(238, 238, 238, 0.8);
+    --break: rgba(255, 255, 255, 0.7);
     --line0: rgba(128, 255, 255, 0.7); 
     --line1: rgba(93, 166, 255, 0.7); 
     --line2: rgba(153, 215, 78, 0.7); 
@@ -38,11 +40,16 @@ html, body { height: 100%; overflow: hidden; }
 body {
     color: var(--foreground-primary);
     background-color: var(--background-primary);
+}
 
+#background {
+    height: 100%;
     background-image: url("../../assets/img/jeremy-bishop-BuQ-jgeexaQ-unsplash.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    filter: blur(10px);
+    transform: scale(1.1);
 }
 
 #fadein {
@@ -191,7 +198,7 @@ main > div {
     position: absolute;
     top: calc(50% - 20px);
     left: calc(50% - 20px);
-    border: 8px solid var(--background-primary);
+    border: 8px solid var(--background-primary-transparent);
     border-top: 8px solid var(--foreground-primary);
     border-radius: 50%;
     width: 40px;
@@ -203,7 +210,7 @@ main > div {
     position: relative;
     top: calc(50% - 12px);
     left: calc(50% - 12px);
-    border: 6px solid var(--background-primary);
+    border: 6px solid var(--background-primary-transparent);
     border-top: 6px solid var(--foreground-primary);
     border-radius: 50%;
     width: 24px;
